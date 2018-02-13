@@ -1,1 +1,0 @@
-/Users/anacarlos/.dotfiles/bash_profile

@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/anacarlos/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="honukai"
 
@@ -25,7 +25,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="atom ~/.zshrc"
 alias ohmyzsh="atom ~/.oh-my-zsh"
 alias gitconfig="atom ~/.gitconfig"
-alias gitalias="atom /Users/anacarlos/.oh-my-zsh/custom/plugins/git/git.plugin.zsh"
+alias gitalias="atom $HOME/.oh-my-zsh/custom/plugins/git/git.plugin.zsh"
 
 alias be='bundle exec'
 
