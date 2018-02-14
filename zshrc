@@ -7,7 +7,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git colored-man-pages)
+plugins=(git colored-man-pages zsh-syntax-highlighting)
 
 # User configuration
 
@@ -32,8 +32,11 @@ alias be='bundle exec'
 export NVM_DIR="/Users/anacarlos/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
-. `brew --prefix`/etc/profile.d/z.sh
+# . `brew --prefix`/etc/profile.d/z.sh
+
+. /usr/local/etc/profile.d/z.sh
 
 eval "$(rbenv init -)" #initializes rbenv
+eval "$(nodenv init -)"
