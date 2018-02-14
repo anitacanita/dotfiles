@@ -65,3 +65,4 @@ alias gpur='git pull -r'
 alias gr='git remote'
 
 alias gst='git status'
+alias gsta='git stash'
