@@ -47,6 +47,7 @@ alias gb='git branch'
 
 alias gco='git checkout'
 alias gcob='git checkout -b'
+alias gco-='git checkout -'
 
 alias gcl='git clone'
 
