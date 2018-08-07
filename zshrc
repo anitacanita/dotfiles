@@ -12,7 +12,7 @@ plugins=(git colored-man-pages zsh-syntax-highlighting)
 # User configuration
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
-export PATH="$PATH:/usr/local/mysql/bin" # add mysqlcat 
+export PATH="$PATH:/usr/local/mysql/bin" # add mysqlcat
 export EDITOR='atom'
 
 source $ZSH/oh-my-zsh.sh
@@ -41,3 +41,5 @@ export NVM_DIR="/Users/anacarlos/.nvm"
 eval "$(rbenv init -)" #initializes rbenv
 eval "$(nodenv init -)"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
