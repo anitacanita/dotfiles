@@ -14,6 +14,8 @@ plugins=(git colored-man-pages zsh-syntax-highlighting)
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 export PATH="$PATH:/usr/local/mysql/bin" # add mysqlcat
 export EDITOR='atom'
+export PUMA_WORKER_TIMEOUT=10000000000000000000 # So that Which? RAD local server doesn't die after a couple of minutes
+export PATH=~/Library/Python/3.7/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
