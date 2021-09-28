@@ -7,15 +7,13 @@ COMPLETION_WAITING_DOTS="true"
 
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git colored-man-pages zsh-syntax-highlighting)
+plugins=( git colored-man-pages zsh-syntax-highlighting zsh-z)
 
 # User configuration
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 export PATH="$PATH:/usr/local/mysql/bin" # add mysqlcat
-export EDITOR='atom'
-export PUMA_WORKER_TIMEOUT=10000000000000000000 # So that Which? RAD local server doesn't die after a couple of minutes
-export PATH=~/Library/Python/3.7/bin:$PATH
+export EDITOR='code'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,24 +22,19 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias zshconfig="atom ~/.zshrc"
-alias ohmyzsh="atom ~/.oh-my-zsh"
-alias gitconfig="atom ~/.gitconfig"
-alias gitalias="atom $HOME/.oh-my-zsh/custom/plugins/git/git.plugin.zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
+alias gitconfig="code ~/.gitconfig"
+alias gitalias="code $HOME/.oh-my-zsh/custom/plugins/git/git.plugin.zsh"
 
 alias be='bundle exec'
 
 export NVM_DIR="/Users/anacarlos/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
-
-# . `brew --prefix`/etc/profile.d/z.sh
-
-. /usr/local/etc/profile.d/z.sh
-
 eval "$(rbenv init -)" #initializes rbenv
-eval "$(nodenv init -)"
+# eval "$(nodenv init -)"
+
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
