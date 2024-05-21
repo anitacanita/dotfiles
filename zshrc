@@ -22,10 +22,13 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias zshconfig="code ~/.zshrc"
+alias zshprof="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias gitconfig="code ~/.gitconfig"
 alias gitalias="code $HOME/.oh-my-zsh/custom/plugins/git/git.plugin.zsh"
+alias bers="bundle exec bin/rails server"
+alias berc="bundle exec bin/rails console"
+alias ber="bundle exec bin/rspec"
 
 alias be='bundle exec'
 
@@ -33,8 +36,12 @@ export NVM_DIR="/Users/anacarlos/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(rbenv init -)" #initializes rbenv
-# eval "$(nodenv init -)"
+eval "$(nodenv init -)" #initializes nodenv
+
+eval "$(direnv hook zsh)"
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
