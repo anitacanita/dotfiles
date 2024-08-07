@@ -60,7 +60,7 @@ alias gdiff='git diff'
 alias glog='git log'
 
 alias gp='git push'
-alias gpu='git pull'
+alias gpl='git pull'
 alias gpur='git pull -r'
 
 alias gr='git remote'
